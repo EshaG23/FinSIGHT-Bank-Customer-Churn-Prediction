@@ -1,0 +1,2 @@
+Scaling,Balance,Features,K,Voting,Threshold,Accuracy,Precision,Recall,F1
+standard,undersampled,all,25,uniform,0.45,0.7425,0.432258064516129,0.8170731707317073,0.5654008438818565

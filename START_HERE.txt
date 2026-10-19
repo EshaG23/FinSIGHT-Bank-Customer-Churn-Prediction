@@ -1,0 +1,4 @@
+Open outputs/comparison/dashboard.html.
+Status: VERIFIED_BY_CUSTOMER_ID
+All five exports regenerated with IDs retained from actual test input rows.
+See README_COMPARISON.md for commands and evidence.

@@ -1,0 +1,64 @@
+{
+  "dataset_sha256": "3996cd1fa372e0db0cd9c0ebac35bbd4e8e3c65fb942bb010c826e7b1eeef0a0",
+  "seed": 42,
+  "test_size": 0.2,
+  "stratify": "Exited",
+  "test_customers": 2000,
+  "identity_retention": "CustomerId index retained from raw source before split and used with freshly generated predictions",
+  "hyperparameter_selection": "Existing validation-selected settings preserved; no test-set tuning",
+  "models": [
+    {
+      "Model": "KNN",
+      "Test_rows": 2000,
+      "Identity": "Retained from raw input index before split/encoding/inference",
+      "Predictions_recomputed": true,
+      "Original_predictions_match": true,
+      "Max_score_difference": 0.0,
+      "Threshold": 0.45,
+      "inference": "Refitted KNN using existing validation-selected settings",
+      "training_rows_after_balancing": 3260
+    },
+    {
+      "Model": "Logistic Regression",
+      "Test_rows": 2000,
+      "Identity": "Retained from raw input index before split/encoding/inference",
+      "Predictions_recomputed": true,
+      "Original_predictions_match": true,
+      "Max_score_difference": 1.6653345369377348e-16,
+      "Threshold": 0.6,
+      "inference": "Saved weights, bias and training scaler statistics"
+    },
+    {
+      "Model": "Decision Tree",
+      "Test_rows": 2000,
+      "Identity": "Retained from raw input index before split/encoding/inference",
+      "Predictions_recomputed": true,
+      "Original_predictions_match": true,
+      "Max_score_difference": 1.1102230246251565e-16,
+      "Threshold": 0.25,
+      "inference": "Saved tree roots",
+      "trees": 1
+    },
+    {
+      "Model": "Random Forest",
+      "Test_rows": 2000,
+      "Identity": "Retained from raw input index before split/encoding/inference",
+      "Predictions_recomputed": true,
+      "Original_predictions_match": true,
+      "Max_score_difference": 9.71445146547012e-17,
+      "Threshold": 0.275,
+      "inference": "Saved tree roots",
+      "trees": 80
+    },
+    {
+      "Model": "SVM",
+      "Test_rows": 2000,
+      "Identity": "Retained from raw input index before split/encoding/inference",
+      "Predictions_recomputed": true,
+      "Original_predictions_match": true,
+      "Max_score_difference": 4.440892098500626e-16,
+      "Threshold": 0.2,
+      "inference": "Saved SVM weights, bias and training scaler statistics"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Model,Test_rows,Identity,Predictions_recomputed,Original_predictions_match,Max_score_difference,Threshold,inference,training_rows_after_balancing,trees
+KNN,2000,Retained from raw input index before split/encoding/inference,True,True,0.0,0.45,Refitted KNN using existing validation-selected settings,3260.0,
+Logistic Regression,2000,Retained from raw input index before split/encoding/inference,True,True,1.6653345369377348e-16,0.6,"Saved weights, bias and training scaler statistics",,
+Decision Tree,2000,Retained from raw input index before split/encoding/inference,True,True,1.1102230246251565e-16,0.25,Saved tree roots,,1.0
+Random Forest,2000,Retained from raw input index before split/encoding/inference,True,True,9.71445146547012e-17,0.275,Saved tree roots,,80.0
+SVM,2000,Retained from raw input index before split/encoding/inference,True,True,4.440892098500626e-16,0.2,"Saved SVM weights, bias and training scaler statistics",,

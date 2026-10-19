@@ -1,0 +1,7 @@
+PASS: 5 actual regenerated prediction exports include retained raw-input CustomerIds.
+PASS: Every export contains exactly the same 2,000 unique canonical customer IDs.
+PASS: Targets match after ID alignment.
+PASS: All prediction labels match previous exports.
+PASS: All 25 metrics unchanged within numerical precision.
+PASS: Strict comparison without --allow-legacy-order succeeds.
+PASS: Saved thresholds consistent with regenerated scores.

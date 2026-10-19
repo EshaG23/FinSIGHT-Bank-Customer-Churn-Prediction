@@ -1,0 +1,19 @@
+VERIFIED_BY_CUSTOMER_ID
+
+Every prediction file has the exact same 2,000 customer IDs and matching labels.
+
+              Model  Accuracy  Precision   Recall       F1  ROC_AUC  Threshold      Score_Type   TN  FP  FN  TP               Alignment
+      Random Forest    0.8290   0.570806 0.643735 0.605081 0.861746      0.275     probability 1396 197 145 262 VERIFIED_BY_CUSTOMER_ID
+      Decision Tree    0.8200   0.546535 0.678133 0.605263 0.842470      0.250     probability 1364 229 131 276 VERIFIED_BY_CUSTOMER_ID
+                KNN    0.7420   0.426451 0.776413 0.550523 0.838884      0.450     probability 1168 425  91 316 VERIFIED_BY_CUSTOMER_ID
+Logistic Regression    0.7785   0.463265 0.557740 0.506132 0.777346      0.600     probability 1330 263 180 227 VERIFIED_BY_CUSTOMER_ID
+                SVM    0.7540   0.426598 0.606880 0.501014 0.766963      0.200 decision margin 1261 332 160 247 VERIFIED_BY_CUSTOMER_ID
+
+   Metric    Best_Model  Best_Value               Alignment
+ Accuracy Random Forest    0.829000 VERIFIED_BY_CUSTOMER_ID
+Precision Random Forest    0.570806 VERIFIED_BY_CUSTOMER_ID
+   Recall           KNN    0.776413 VERIFIED_BY_CUSTOMER_ID
+       F1 Decision Tree    0.605263 VERIFIED_BY_CUSTOMER_ID
+  ROC_AUC Random Forest    0.861746 VERIFIED_BY_CUSTOMER_ID
+
+Models use their own training-validation-selected thresholds, not a common 0.5 threshold. SVM scores are decision margins, not probabilities; ROC-AUC uses ranking scores directly. Winners are descriptive maxima on this held-out set, not proof of significance or a reason to retune on test data. Always-stayed baseline accuracy: 79.65%; churn recall: 0%.

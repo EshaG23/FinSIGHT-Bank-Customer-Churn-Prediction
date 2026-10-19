@@ -1,0 +1,19 @@
+# Native base theme. FinSIGHT's own Light/Dark switch (theme.py + assets/styles.css)
+# restyles the whole interface on top of this, so the base only matters for widgets
+# that the stylesheet does not explicitly cover.
+[theme]
+base = "light"
+primaryColor = "#4F46E5"
+backgroundColor = "#F6F7FB"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F172A"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+showEmailPrompt = false
+
+[browser]
+gatherUsageStats = false

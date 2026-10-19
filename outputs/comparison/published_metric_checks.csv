@@ -1,0 +1,26 @@
+Model,Metric,Matches
+KNN,Accuracy,True
+KNN,Precision,True
+KNN,Recall,True
+KNN,F1,True
+KNN,ROC_AUC,True
+Logistic Regression,Accuracy,True
+Logistic Regression,Precision,True
+Logistic Regression,Recall,True
+Logistic Regression,F1,True
+Logistic Regression,ROC_AUC,True
+Decision Tree,Accuracy,True
+Decision Tree,Precision,True
+Decision Tree,Recall,True
+Decision Tree,F1,True
+Decision Tree,ROC_AUC,True
+Random Forest,Accuracy,True
+Random Forest,Precision,True
+Random Forest,Recall,True
+Random Forest,F1,True
+Random Forest,ROC_AUC,True
+SVM,Accuracy,True
+SVM,Precision,True
+SVM,Recall,True
+SVM,F1,True
+SVM,ROC_AUC,True

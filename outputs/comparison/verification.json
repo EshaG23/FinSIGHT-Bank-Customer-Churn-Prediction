@@ -1,0 +1,55 @@
+{
+  "status": "VERIFIED_BY_CUSTOMER_ID",
+  "allow_legacy_order": false,
+  "n_test": 2000,
+  "dataset_sha256": "3996cd1fa372e0db0cd9c0ebac35bbd4e8e3c65fb942bb010c826e7b1eeef0a0",
+  "note": "Every prediction file has the exact same 2,000 customer IDs and matching labels.",
+  "dataset_checks": "Encoded train/test feature values, columns and row order, and train/test labels match reconstructed seed-42 stratified 80:20 split.",
+  "per_model": [
+    {
+      "Model": "KNN",
+      "Rows": 2000,
+      "Alignment": "VERIFIED_BY_CUSTOMER_ID",
+      "Labels_match": true,
+      "Threshold_consistent": true,
+      "Prediction_file": "knn_improved/test_predictions.csv",
+      "Prediction_SHA256": "740754769dd77e851a8b9f7c44dd4cfd25b4188884dc8950b01cfbac055634c8"
+    },
+    {
+      "Model": "Logistic Regression",
+      "Rows": 2000,
+      "Alignment": "VERIFIED_BY_CUSTOMER_ID",
+      "Labels_match": true,
+      "Threshold_consistent": true,
+      "Prediction_file": "logistic_results/logistic_predictions.csv",
+      "Prediction_SHA256": "e45278fb63193c2534547938ebd97b09087914f14c93eacee39df7b1a3d52a01"
+    },
+    {
+      "Model": "Decision Tree",
+      "Rows": 2000,
+      "Alignment": "VERIFIED_BY_CUSTOMER_ID",
+      "Labels_match": true,
+      "Threshold_consistent": true,
+      "Prediction_file": "decision_tree_scratch_entropy/predictions.csv",
+      "Prediction_SHA256": "8ca7c2149b5467f6ebd493a46592ea6a6c092ade6b89fdcf8861ada1df84a171"
+    },
+    {
+      "Model": "Random Forest",
+      "Rows": 2000,
+      "Alignment": "VERIFIED_BY_CUSTOMER_ID",
+      "Labels_match": true,
+      "Threshold_consistent": true,
+      "Prediction_file": "random_forest_scratch_entropy/predictions.csv",
+      "Prediction_SHA256": "94c1a32bedb25575772a9a4f92976fffcec840a377079e4cf72bf2a9aeddf873"
+    },
+    {
+      "Model": "SVM",
+      "Rows": 2000,
+      "Alignment": "VERIFIED_BY_CUSTOMER_ID",
+      "Labels_match": true,
+      "Threshold_consistent": true,
+      "Prediction_file": "svm_scratch/predictions.csv",
+      "Prediction_SHA256": "5635daa51e0c53be2f5faa473f0965ad4c84eab0192d576df50daa510013b279"
+    }
+  ]
+}
